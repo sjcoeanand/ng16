@@ -1,0 +1,31 @@
+<div class="back-to">
+    <ul>
+        <li>
+            <a [routerLink]="['/portfolio']">Back to Portfolio</a>
+        </li>
+    </ul>
+</div>
+<p>signal-basic works!</p>
+<div class="row">
+    <div class="col-md-4">
+        <div class="normal-change">
+            <div class="card p-2">
+                <div class="mb-2">
+                    <label for="first name" class="me-2">First Name</label>
+                    <input type="text" class="form-control" #firstName>
+                </div>
+                <div class="mb-2">
+                    <label for="last name" class="me-2">Last Name</label>
+                    <input type="text" class="form-control" #lastName>
+                </div>
+                <div>
+                    <label for="full name" class="me-2">Full Name</label>
+                    <p>{{fullName}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="signal-change"></div>
+    </div>
+</div>

@@ -3,6 +3,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SignalBasicComponent } from './signal-basic/signal-basic.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path : 'projects',
     component : ProjectsComponent
+  },
+  {
+    path : 'signal-basic',
+    component  : SignalBasicComponent
   },
   {
     path: '**',
