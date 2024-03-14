@@ -13,12 +13,15 @@ ul {
         list-style: none;
     }
 }
-
+h1{
+    color: #a144eb;
+}
 .back-to{
     ul{
         li{
             a{
                 font-size: 12px;
+                font-style: italic;
             }
         }
     }

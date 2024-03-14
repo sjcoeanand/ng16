@@ -1,9 +1,10 @@
 <div class="home-nav">
     <ul>
-        <li>
-            <a [routerLink]="['/projects']">Projects</a>
-            <a [routerLink]="['/signal-basic']">Signals</a>
+        <li class="mb-1" *ngFor="let item of topics">
+            <a  [routerLink]="['/'+item.path]">{{item.name}}</a>
         </li>
     </ul>
 </div>
-<p class="text-success fw-bold pt-2">Portfolio Example</p>
+<section class="mt-2">
+    <h5>Welcome to Homepage</h5>
+</section>

@@ -1,10 +1,12 @@
 .home-nav{
     a{
-        text-decoration: none;
-        background-color: rgb(74, 88, 243);
-        color: #fff;
-        padding: 2px 5px;
-        border-radius: 5px;
-        margin-right: 5px;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 500;        
+        color: #a144eb;
+        text-decoration:overline #292828;
+        &:before {
+            content: '>';
+        }
     }
 }

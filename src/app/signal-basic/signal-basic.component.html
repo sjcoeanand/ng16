@@ -5,27 +5,65 @@
         </li>
     </ul>
 </div>
-<p>signal-basic works!</p>
-<div class="row">
-    <div class="col-md-4">
-        <div class="normal-change">
-            <div class="card p-2">
-                <div class="mb-2">
-                    <label for="first name" class="me-2">First Name</label>
-                    <input type="text" class="form-control" #firstName>
+<section class="mt-2 signal">
+    <h5>Signal</h5>
+    <p>A signal is a wrapper around a value, which is capable of notifying interested consumers when that value changes.</p>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <h5>Normal Change</h5>
+            <div class="normal-change">
+                <div class="card p-2">
+                    <div class="mb-2">
+                        <label for="first name" class="me-2">First Name</label>
+                        <input type="text" class="form-control" #firstName>
+                    </div>
+                    <div class="mb-2">
+                        <label for="last name" class="me-2">Last Name</label>
+                        <input type="text" class="form-control" #lastName>
+                    </div>
+                    <div class="mb-2 d-flex ">
+                        <button class="btn btn-secondary btn-sm me-2" (click)="getName(firstName.value , 'fname')">Update First Name</button>
+                        <button class="btn btn-secondary btn-sm" (click)="getName(lastName.value, 'lname')">Update Last Name</button>
+                    </div>
+                    <div>
+                        <div class="output d-flex">
+                            <div class="me-2">{{fName}}</div> 
+                            <div class="me-2">+</div>
+                            <div class="me-2">{{lName}}</div>
+                            <div class="me-2">=</div>
+                            <div>{{fullName}}</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-2">
-                    <label for="last name" class="me-2">Last Name</label>
-                    <input type="text" class="form-control" #lastName>
-                </div>
-                <div>
-                    <label for="full name" class="me-2">Full Name</label>
-                    <p>{{fullName}}</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h5>Signal Change</h5>
+            <div class="normal-change">
+                <div class="card p-2">
+                    <div class="mb-2">
+                        <label for="first name" class="me-2">First Name</label>
+                        <input type="text" class="form-control" #firstName1>
+                    </div>
+                    <div class="mb-2">
+                        <label for="last name" class="me-2">Last Name</label>
+                        <input type="text" class="form-control" #lastName1>
+                    </div>
+                    <div class="mb-2 d-flex ">
+                        <button class="btn btn-secondary btn-sm me-2" (click)="getName1(firstName1.value , 'fname')">Update First Name</button>
+                        <button class="btn btn-secondary btn-sm" (click)="getName1(lastName1.value, 'lname')">Update Last Name</button>
+                    </div>
+                    <div>
+                        <div class="output d-flex">
+                            <div class="me-2">{{fName1()}}</div> 
+                            <div class="me-2">+</div>
+                            <div class="me-2">{{lName1()}}</div>
+                            <div class="me-2">=</div>
+                            <div>{{fullName1()}}</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-md-6">
-        <div class="signal-change"></div>
-    </div>
-</div>
+</section>

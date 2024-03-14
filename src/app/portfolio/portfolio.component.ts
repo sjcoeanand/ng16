@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent {
-
+  topics:any[]=[
+  {
+    path:'signal-basic',
+    name: 'Signal'
+  },
+  {
+    path:'projects',
+    name: 'Project'
+  }];
 }
